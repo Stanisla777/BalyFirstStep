@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google" value="notranslate">
+    <meta name="theme-color" content="#ffffff">
+    <title> </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--<link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/FontAwesoome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+
+
+</head>
+<body class="single-page">
+
+<section class="page-content">
+
+    <section class="main-section">
+        <div class="container">
+            <div class="header">
+                <p class="header__wrap header__slogan">
+                    «Путешествие со смыслом
+                    Путешествие за правдой о Себе»
+                </p>
+
+                <div style="background-image: url('img/LogoNeiro.png')" class="header__logo"></div>
+
+                <div class="header__wrap header__social-icon social-icon">
+                    <a class="social-icon__item" href="#">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon__item" href="#">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon__item" href="#">
+                        <i class="fa fa-odnoklassniki-square" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon__item" href="#">
+                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-icon__item" href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div style="background-image: url('img/LogoMain.png')" class="main-logo"></div>
+
+            <h1 class="h1-title main-section__h1-title">ОЗДОРОВИТЕЛЬНЫЙ ТУР НА ОСТРОВ БАЛИ</h1>
+            <h2 class="h1-title-subtitle">Полное очищение, оздоровление и омоложение организма в окружении тропических джунглей</h2>
+
+            <div class="upcoming-event">
+
+                <div class="upcoming-event__wrapper-timer">
+                    <p class="upcoming-event__end">До ближайшего путешествия осталось:</p>
+                    <div class="countdown" id="upcoming-event__timer"></div>
+                </div>
+                <div class="upcoming-event__date-event">
+                    <span class="upcoming-event__start-day">19</span>
+                    <span class="upcoming-event__separator">-</span>
+                    <span class="upcoming-event__end-day">26</span>
+                    <span class="upcoming-event__month">ноября</span>
+                </div>
+
+
+            </div>
+
+            <p class="end-slogan">
+                ИСЦЕЛИ СЕБЯ<br>
+                БЕЗ ВРАЧЕЙ И ЛЕКАРСТВ
+            </p>
+        </div>
+    </section>
+
+    <section class="submit-bid">
+        <div class="container">
+            <div class="con"></div>
+            <div class="con2"></div>
+            <div class="con3"></div>
+
+            <div class="fgh">
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="">
+        <div class="container">
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+</section>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/countdown.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+
+    //    В хедере блоки делаю одной ширины, чтобы лого всегда было по центру
+
+        var maxwidth =0;
+        function auto_width() {
+            $('.header__wrap').each(function () { //циклом прохожу все блоки, кроме среднег
+
+                if ($(this).width() > maxwidth) {//записываю в переменную после каждого обхода большую величину
+                    maxwidth = $(this).width();
+                }
+            });
+
+            $('.header__wrap').css('minWidth',maxwidth);//даю крайним блокам одинаковую ширину
+
+        }
+        auto_width();//вызываю функцию
+
+
+    });
+</script>
+</body>
+</html>
