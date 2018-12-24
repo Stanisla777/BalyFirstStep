@@ -17,7 +17,7 @@ body {
   color: #2e3180;
   cursor: default;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   height: auto;
   min-height: 100%;
@@ -142,6 +142,9 @@ button:focus {
 .mar-bot-20 {
   margin-bottom: 20px;
 }
+.mar-bot-15 {
+  margin-bottom: 15px;
+}
 .mar-bot-10 {
   margin-bottom: 10px;
 }
@@ -193,15 +196,10 @@ button:focus {
 input {
   position: relative;
   display: block;
-  padding-left: 15px;
+  padding-left: 20px;
   font-family: 'GothamPro', sans-serif;
   outline: none;
-}
-input:-moz-placeholder {
-  color: #b7bfd2;
-}
-input::-webkit-input-placeholder {
-  color: #b7bfd2;
+  border: none;
 }
 textarea {
   padding-left: 15px;
@@ -270,12 +268,7 @@ label {
 }
 .button {
   border-radius: 5px;
-  padding: 5px 8px;
-  display: inline-block;
   color: #ffffff;
-}
-.button-request {
-  font-size: 16px;
 }
 .button_blur {
   background-color: #0087e1;
@@ -470,28 +463,208 @@ section {
 }
 /*2 секция Оставить заявку*/
 .submit-bid {
-  background-image: url("../img/BackFon2.png");
-  padding-bottom: 83px;
-  margin-top: -90px;
-  padding-top: 111px;
-}
-.con {
-  height: 45px;
-  border: 1px solid;
-}
-.con2 {
-  height: 63px;
-  border: 1px solid;
-}
-.con3 {
-  height: 10px;
-  border: 1px solid;
-}
-.fgh {
-  height: 100px;
-  width: 100px;
-  background: url("../img/FonSection-1.jpg") center no-repeat;
+  background-image: url(../img/BackFon.png);
+  background-position: center;
+  margin-top: -131px;
+  padding-top: 166px;
   background-size: cover;
+  padding-bottom: 162px;
+}
+.call-to-action-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+}
+.call-to-action-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+.wrapper-form {
+  margin-top: 21px;
+}
+.wrapper-form__info {
+  display: flex;
+}
+.wrapper-form__input {
+  font-family: 'GothamPro', sans-serif;
+  width: 263px;
+  height: 58px;
+  box-shadow: 0 0 5px 1px #a8a4a4;
+  margin-right: 29px;
+  color: #595959;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.wrapper-form__input::-moz-placeholder {
+  color: #595959;
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrapper-form__input::-webkit-input-placeholder {
+  color: #595959;
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrapper-form .button {
+  width: 262px;
+  font-size: 31px;
+  color: #fff;
+  box-shadow: 0 0 5px 1px #a8a4a4;
+}
+/*Стилизация чекбокса*/
+.wrapper-form__checkbox {
+  position: relative;
+  margin-top: 18px;
+}
+.wrapper-form__checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 9px;
+}
+.wrapper-form__checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 22px;
+  font-size: 12px;
+  color: #595959;
+  font-weight: 500;
+}
+.wrapper-form__checkbox label a {
+  display: inline;
+  color: #2e3180;
+  font-size: 12px;
+}
+.wrapper-form__checkbox label::before,
+.wrapper-form__checkbox label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+.wrapper-form__checkbox label::before {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #bababa;
+  left: 0px;
+  top: -1px;
+  background-color: #e8e8e8;
+  outline: none;
+  box-sizing: border-box;
+}
+.wrapper-form__checkbox label::after {
+  height: 6px;
+  width: 13px;
+  border-left: 2px solid #292d83;
+  border-bottom: 2px solid #292d83;
+  transform: rotate(-45deg);
+  left: 2px;
+  top: -2px;
+}
+.wrapper-form__checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+.wrapper-form__checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+  outline: none;
+}
+.wrapper-form__checkbox input[type="checkbox"]:focus + label::before {
+  outline: none;
+}
+/*Секция 3 - Преимущества*/
+.advantages-section {
+  margin-top: -34px;
+  background-image: url(../img/FonSection-2.jpg);
+  background-position: center 265px;
+  background-repeat: no-repeat;
+  padding-bottom: 138px;
+}
+/**/
+.grid-up {
+  position: absolute;
+  top: -130px;
+  right: -10px;
+  width: 42vw;
+  height: 26vw;
+  background: url(../img/grid-up.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper-advantages-logo {
+  display: flex;
+}
+.logo-first-step {
+  position: relative;
+  width: 100%;
+  max-width: 556px;
+  max-height: 135px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo-first-step:before {
+  content: "";
+  display: block;
+  padding-top: 24.3%;
+}
+.row-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row-2-column__col {
+  position: relative;
+  width: calc(50% - 15px*2);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.about-first-step {
+  line-height: 22px;
+}
+.about-first-step p:not(:last-child) {
+  font-weight: 200;
+  margin-bottom: 24px;
+  line-height: 25px;
+}
+.advantage-col-left {
+  margin-top: 8px;
+}
+.wrapper-waiting-you {
+  text-transform: uppercase;
+  margin-top: 41px;
+  letter-spacing: -0.7px;
+  font-weight: 500;
+}
+.wrapper-waiting-you p:nth-child(1) {
+  font-size: 47px;
+}
+.wrapper-waiting-you p:nth-child(2) {
+  font-size: 42px;
+  margin-top: 22px;
+}
+.wrapper-waiting-you p:nth-child(3) {
+  font-size: 114px;
+  margin-top: 13px;
+  font-weight: 600;
+}
+.advantages-list {
+  margin-top: 35px;
+}
+.advantages-list__item {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+}
+.advantages-list__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+.advantages-list__item:before {
+  font-family: "FontAwesome", sans-serif;
+  font-size: 23px;
+  content: "\f00c";
+  margin-right: 14px;
 }
 /*Модальное окно*/
 #lean_overlay {
