@@ -52,6 +52,16 @@ font-style: normal;
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro/GothamProBlack.eot');
+    src: url('../fonts/GothamPro/GothamProBlack.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro/GothamProBlack.woff') format('woff'),
+    url('../fonts/GothamPro/GothamProBlack.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
 
 
 
