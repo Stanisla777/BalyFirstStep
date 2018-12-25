@@ -295,22 +295,23 @@ label {
 }
 .h2-title {
     text-transform: uppercase;
-    color: #474f80;
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 7px;
+    color: #2e3180;
+    font-size: 40px;
+    font-weight: 500;
 }
 .h3-title {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 25px;
     color: #2e3180;
-    font-weight: 400;
+    font-weight: 500;
 }
 .button {
     border-radius: 5px;
-    //padding: 5px 8px;
-    //display: inline-block;
     color: #ffffff;
+    width: 262px;
+    padding: 12px 17px;
+    font-size: 31px;
+    box-shadow: 0 0 5px 1px #a8a4a4;
 }
 
 .button_blur {
@@ -392,9 +393,11 @@ section{
     background-size:cover;
 }
 .main-section{
-    background-image: url("../img/FonSection-1.jpg");
+    background-image: url("../img/Fon1.jpg");
     padding-top: 24px;
-    padding-bottom: 56px;
+    /*padding-bottom: 56px;*/
+
+    padding-bottom: 73px;
 }
 .header{
     display: flex;
@@ -519,7 +522,7 @@ section{
 
 
 /*2 секция Оставить заявку*/
-
+/**1 вариант/
 .submit-bid {
     background-image: url(../img/BackFon.png);
     background-position: center;
@@ -528,6 +531,15 @@ section{
     background-size: cover;
     padding-bottom: 162px;
 }
+/*2вариант*/
+.submit-request{
+    background-color: #d5ddff;
+    padding-top: 18px;
+    padding-bottom: 21px;
+}
+
+
+
 
 .call-to-action-title{
     text-transform: uppercase;
@@ -568,10 +580,7 @@ section{
     }
 
     .button{
-        width: 262px;
-        font-size: 31px;
-        color: #fff;
-        box-shadow: 0 0 5px 1px #a8a4a4;
+
     }
 }
 
@@ -648,11 +657,16 @@ section{
 
 /*Секция 3 - Преимущества*/
 .advantages-section{
-    margin-top: -34px;
-    background-image: url(../img/FonSection-2.jpg);
-    background-position: center 265px;
+    //margin-top: -34px;
+    //background-position: center 265px;
+    padding-top: 106px;
+    //padding-top: 113px;
+    background-image: url(../img/Fon2.jpg);
+    background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 138px;
+    //padding-bottom: 138px;
+
+    padding-bottom: 175px;
 }
 
 /**/
@@ -749,21 +763,186 @@ section{
 
 }
 
+.submit-request-2{
+    //padding-bottom: 10px;
+    &__title{
+        margin-top: -8px;
+        font-size: 38px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: -0.2px;
+        line-height: 58px;
+    }
+}
+.wrapper-part-in-program{
+    max-width: 623px;
+    margin-left: auto;
+    text-align: right;
+    margin-right: 97px;
+    margin-top: 22px;
+}
+.part-in-program{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    p:nth-child(1){
+        text-transform: uppercase;
+    }
 
 
+}
+
+.submit-request-2{
+    .button{
+        margin-left:auto;
+        margin-top: 11px;
+    }
+}
 
 
+/*4 секция Программа курса*/
+
+.section-course-program{
+    background-image: url("../img/Fon3.jpg");
+    background-position: center -61px;
+    padding-top: 160px;
+    //height: 1200px;
+    h3{
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+.program-list{
+    margin-top: 24px;
+    &__item{
+        font-size: 20px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+            margin-bottom: 7px;
+        }
+        &:before{
+            content: "";
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #2e3180;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.wrapper-dream-day{
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 36px;
+    padding: 22px 30px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/BalyMap.jpg");
+    &__location{
+        font-size: 27px;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+    }
+    &__slogan{
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        max-width: 230px;
+        margin-left: auto;
+        margin-right: 2px;
+        letter-spacing: -0.6px;
+        margin-top: 5px;
+        line-height: 20px;
+    }
+}
+
+/*Слайдер чудесные дни*/
+
+.slider-dream-day{
+
+    &__item{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        &:before{
+            content: "";
+            display: block;
+            padding-top: 63%;
+        }
 
 
+    }
+}
+.wrapper-owl-carousel{
+    width: 95%;
+    margin: 19.2% auto 0;
+    position: relative;
+}
+
+/*Стралки слайдера*/
+.wrapper-owl-carousel .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+.wrapper-owl-carousel .owl-dots .owl-dot {
+    margin: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+}
+.wrapper-owl-carousel .owl-dots .owl-dot:hover {
+    background-color: #2e3180;
+}
+.wrapper-owl-carousel .owl-dots .owl-dot.active {
+    background-color: #2e3180;
+}
 
 
-
-
-
-
-
-
-
+.wrapper-owl-carousel .owl-nav {
+    font-size: 30px;
+}
+.wrapper-owl-carousel .owl-nav button {
+    position: absolute;
+    width: 33px;
+    height: 52px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    margin-top: -31px;
+}
+.wrapper-owl-carousel .owl-nav .owl-prev {
+    background-image: url("../img/SliderFairyArrowLeft.png") !important;
+    left: -46px;
+    &:hover{
+        left: -47px;
+    }
+}
+.wrapper-owl-carousel .owl-nav .owl-next {
+    background-image: url("../img/SliderFairyArrowRight.png") !important;
+    right: -46px;
+    &:hover{
+        right: -47px;
+    }
+}
 
 
 
