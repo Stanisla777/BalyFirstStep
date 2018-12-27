@@ -940,21 +940,22 @@ section {
 /*слайдер отзывы*/
 .wrapper-slider-reviews {
   margin-top: 43px;
+  position: relative;
 }
 .slider-reviews-item {
+  background-color: #fff;
+  padding: 2px;
   display: flex;
 }
 .slider-reviews-item__img {
   width: 64%;
-  border: 1px solid;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .slider-reviews-item__des {
-  padding: 25px 32px 20px 33px;
+  padding: 25px 32px 59px 33px;
   width: 36%;
-  border: 1px solid;
   text-align: justify;
 }
 .slider-reviews-item__name {
@@ -966,6 +967,32 @@ section {
   font-size: 16px;
   margin-top: 29px;
   line-height: 23px;
+}
+/*Стрелки слайдера*/
+.wrapper-slider-reviews .owl-nav {
+  position: absolute;
+}
+.wrapper-slider-reviews .owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 18px;
+}
+.wrapper-slider-reviews .owl-dots .owl-dot {
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+}
+.wrapper-slider-reviews .owl-dots .owl-dot:hover {
+  background-color: #2e3180;
+}
+.wrapper-slider-reviews .owl-dots .owl-dot.active {
+  background-color: #2e3180;
 }
 /*Модальное окно*/
 #lean_overlay {
