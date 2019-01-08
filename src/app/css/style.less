@@ -37,7 +37,6 @@ footer {
 }
 .page-content {
     //padding-top: 10px;
-    padding-bottom: 30px;
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
@@ -156,6 +155,9 @@ button:focus {
 }
 .mar-top-30 {
     margin-top: 30px;
+}
+.mar-top-25 {
+    margin-top: 25px;
 }
 .mar-top-20 {
     margin-top: 20px;
@@ -309,12 +311,19 @@ label {
 .button {
     border-radius: 5px;
     color: #ffffff;
-    width: 262px;
-    padding: 12px 17px;
-    font-size: 31px;
+  width: 262px;
+  min-width: 217px;
+    height: 42px;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
     box-shadow: 0 0 5px 1px #a8a4a4;
 }
-
+a.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .button_blur {
     background-color: #0087e1;
 }
@@ -396,21 +405,20 @@ section{
 .main-section{
     background-image: url("../img/Fon1.jpg");
     padding-top: 24px;
-    /*padding-bottom: 56px;*/
-
-    padding-bottom: 73px;
+     padding-bottom: 82px;
 }
 .header{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     &__slogan{
         font-style: italic;
         max-width: 280px;
-        line-height: 21px;
+        line-height: 24px;
     }
     &__logo{
-        width: 165px;
-        height: 137px;
+        width: 147px;
+        height: 122px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -439,7 +447,7 @@ section{
     width: 54%;
     max-width: 611px;
     max-height: 147px;
-    margin: 23px auto 0;
+    margin: 13px auto 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -459,56 +467,61 @@ section{
     font-size: 20px;
     font-weight: 500;
     text-align: center;
-    margin-top: 9px;
+    width: 90%;
+    margin: 7px auto 0;
 }
-.upcoming-event__end{
+.upcoming-event__title{
     font-size: 20px;
     font-weight: 500;
+    color: #fafafe;
 }
-#upcoming-event__timer{
-    margin-top: 6px;
-}
+
 .upcoming-event{
     display: flex;
     justify-content: space-between;
     margin-top: 38px;
 }
-.countdown{
+.countdown_2{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    margin-top: -4px;
+    font-size: 65px;
     font-weight: 600;
-    font-size: 40px;
+    color: #fff;
+
 }
 
-
-.number{
-    font-size: 40px;
+.number-wrappers{
+    display: flex;
 }
 .line{
-    margin: 0 10px 0 4px;
+    margin: 0 20px 0 4px;
 }
 .timer-date{
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .upcoming-event__date-event{
     color: #fff;
     font-weight: 600;
-    margin-top: -10px;
+    font-size: 65px;
+  display: flex;
+  flex-direction: column;
+
 }
-.upcoming-event__start-day,.upcoming-event__end-day{
-    font-size: 80px;
-}
+//.upcoming-event__start-day,.upcoming-event__end-day{
+//    font-size: 80px;
+//}
 .upcoming-event__separator{
-    font-size: 80px;
+    //font-size: 80px;
     margin-right: -4px;
     margin-left: -5px;
 }
 .upcoming-event__month{
-    font-size: 54px;
-    margin-left: 23px;
+    //font-size: 54px;
+    margin-left: 4px;
 }
 .end-slogan{
     color: #fff;
@@ -517,7 +530,7 @@ section{
     text-align: center;
     //max-width: 570px;
     font-weight: 500;
-    margin-top: 14px;
+    margin-top: 3px;
     line-height: 58px;
 }
 
@@ -535,8 +548,8 @@ section{
 /*2вариант*/
 .submit-request{
     background-color: #d5ddff;
-    padding-top: 18px;
-    padding-bottom: 21px;
+    padding-top: 13px;
+    padding-bottom: 9px;
 }
 
 
@@ -561,34 +574,69 @@ section{
     &__input{
         font-family: 'GothamPro', sans-serif;
         width: 263px;
-        height: 58px;
+        height: 42px;
         box-shadow: 0 0 5px 1px #a8a4a4;
         margin-right: 29px;
-        color: #595959;
-        font-size: 20px;
+        color: #767676;
+        font-size: 16px;
         font-weight: 500;
         border-radius: 5px;
         &::-moz-placeholder {
-            color: #595959;
-            font-size: 20px;
+            color: #767676;
+            font-size: 16px;
             font-weight: 500;
         }
         &::-webkit-input-placeholder {
-            color: #595959;
-            font-size: 20px;
+            color: #767676;
+            font-size: 16px;
             font-weight: 500;
         }
+
     }
 
     .button{
-
+      width: 24%;
+      max-width: 262px;
+      min-width: 263px;
     }
 }
 
 /*Стилизация чекбокса*/
+.wrapper-form{
+    &__easy-connection{
+        margin-top: 18px;
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        align-items: center;
+      flex-wrap: wrap;
+        div:not(:last-child){
+            margin-right: 34px;
+        }
+    }
+
+    &__agree-conditions{
+        margin-top: 15px;
+        label{
+            font-size: 12px;
+            font-weight: 500;
+            color: #595959;
+            a{
+                display: inline;
+                color: #2e3180;
+                font-size: 12px;
+                text-decoration: underline!important;
+            }
+        }
+    }
+}
+
+
+
+
 .wrapper-form__checkbox{
     position: relative;
-    margin-top: 18px;
+    //margin-top: 18px;
 }
 .wrapper-form__checkbox input[type="checkbox"] {
     opacity: 0;
@@ -600,14 +648,11 @@ section{
     position: relative;
     display: inline-block;
     padding-left: 22px;
-    font-size: 12px;
-    color: #595959;
-    font-weight: 500;
-    a{
-        display: inline;
-        color: #2e3180;
-        font-size: 12px;
-    }
+    //margin-top: 2px;
+    //font-size: 12px;
+    //color: #595959;
+    //font-weight: 500;
+
 }
 
 .wrapper-form__checkbox label::before,
@@ -658,16 +703,14 @@ section{
 
 /*Секция 3 - Преимущества*/
 .advantages-section{
-    //margin-top: -34px;
-    //background-position: center 265px;
-    padding-top: 106px;
-    //padding-top: 113px;
+    padding-top: 98px;
     background-image: url(../img/Fon2.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    //padding-bottom: 138px;
-
-    padding-bottom: 175px;
+    padding-bottom: 153px;
+  .logo-first-step{
+    margin-bottom: 28px;
+  }
 }
 
 /**/
@@ -693,6 +736,7 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     &:before{
         content: "";
         display: block;
@@ -715,11 +759,23 @@ section{
     margin-right: @margin;
 }
 .about-first-step{
-    line-height: 22px;
-    p:not(:last-child){
+    p{
+        line-height: 22px;
+        text-align: justify;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        line-height: 24px;
         font-weight: 200;
+        letter-spacing: -0.4px;
+    }
+    p:not(:last-child){
         margin-bottom: 24px;
-        line-height: 25px;
+    }
+}
+.col-advantage:nth-child(2) .about-first-step{
+    p{
+        letter-spacing: -1px;
     }
 }
 .advantage-col-left{
@@ -727,7 +783,7 @@ section{
 }
 .wrapper-waiting-you{
     text-transform: uppercase;
-    margin-top: 41px;
+    margin-top: 29px;
     letter-spacing: -0.7px;
     font-weight: 500;
     p:nth-child(1){
@@ -745,12 +801,14 @@ section{
 
 }
 .advantages-list{
-    margin-top: 35px;
+    margin-top: 21px;
     &__item{
         font-size: 20px;
         font-weight: 500;
         color: #fff;
         display: flex;
+        letter-spacing: -0.3px;
+        text-shadow: 0 0 5px #232323;
         &:not(:last-child){
             margin-bottom: 26px;
         }
@@ -759,13 +817,17 @@ section{
             font-size: 23px;
             content: "\f00c";
             margin-right: 14px;
+            color: #292d83;
         }
     }
 
 }
 
 .submit-request-2{
-    //padding-bottom: 10px;
+    .button{
+        margin-left:auto;
+        margin-top: 21px;
+    }
     &__title{
         margin-top: -8px;
         font-size: 38px;
@@ -773,7 +835,7 @@ section{
         font-weight: 500;
         text-align: center;
         letter-spacing: -0.2px;
-        line-height: 58px;
+        line-height: 61px;
     }
 }
 .wrapper-part-in-program{
@@ -781,7 +843,10 @@ section{
     margin-left: auto;
     text-align: right;
     margin-right: 97px;
-    margin-top: 22px;
+    margin-top: 15px;
+  //.button{
+  //  width: 42%;
+  //}
 }
 .part-in-program{
     font-size: 18px;
@@ -794,21 +859,15 @@ section{
 
 }
 
-.submit-request-2{
-    .button{
-        margin-left:auto;
-        margin-top: 11px;
-    }
-}
 
 
 /*4 секция Программа курса*/
 
 .section-course-program{
     background-image: url(../img/Fon3c.jpg);
-    background-position: center -7px;
-    padding-top: 160px;
-    padding-bottom: 114px;
+    background-position: center -1px;
+    padding-top: 168px;
+    padding-bottom: 106px;
     h3{
         font-size: 30px;
         font-weight: 600;
@@ -821,18 +880,28 @@ section{
         font-size: 20px;
         font-weight: 300;
         display: flex;
-        align-items: center;
+        /*align-items: center;*/
         &:not(:last-child){
             margin-bottom: 7px;
         }
         &:before{
-            content: "";
+            /*content: "";
             display: block;
             width: 6px;
             height: 6px;
             background-color: #2e3180;
             margin-right: 10px;
-            border-radius: 50%;
+            border-radius: 50%;*/
+
+          content: "\f111";
+          font-family: "FontAwesome", sans-serif;
+          display: block;
+          margin-right: 6px;
+          margin-top: 8px;
+          color: #2e3180;
+          font-size: 7px;
+
+
         }
     }
 }
@@ -904,8 +973,8 @@ section{
 }
 .wrapper-owl-carousel .owl-dots .owl-dot {
     margin: 5px;
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: #f1f1f1;
 }
@@ -924,9 +993,9 @@ section{
     position: absolute;
     width: 33px;
     height: 52px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
     top: 50%;
     margin-top: -31px;
 }
@@ -946,10 +1015,21 @@ section{
 }
 
 .submit-request-3{
-    padding-top: 45px;
+    padding-top: 53px;
+    .wrapper-submit-application{
+        display: flex;
+        justify-content: space-between;
+        width: 83%;
+        margin: 43px auto 0;
+        padding-left: 27px;
+    }
+    .part-in-program{
+        text-align: right;
+    }
+
 }
-.submit-request-3 .button{
-    margin: 0 auto;
+.wrapper-submit-application{
+
 }
 
 
@@ -957,15 +1037,15 @@ section{
 
 .section-amazing-results{
     background-image: url("../img/Fon4.jpg");
-    background-position: center -9px;
-    padding-top: 144px;
-    padding-bottom: 118px;
+    background-position: center 6px;
+    padding-top: 177px;
+    padding-bottom: 128px;
     .container{
 
     }
     h3{
         &:not(:first-child){
-            margin-top: 44px;
+            margin-top: 65px;
         }
         span{
             font-size: 16px;
@@ -990,17 +1070,17 @@ section{
     &__item{
         display: flex;
         p{
-            line-height: 23px;
+            line-height: 26px;
         }
         &:before{
             font-family: "FontAwesome", sans-serif;
             font-size: 17px;
             content: "\f00c";
             margin-right: 11px;
-            color: #fff;
+            color: #292d83;
         }
         &:not(:last-child){
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
     }
 
@@ -1008,7 +1088,7 @@ section{
 
 .watch-video{
     font-size: 30px;
-    margin-top: 69px;
+    margin-top: 63px;
 }
 .wrapper-video{
     position: relative;
@@ -1041,12 +1121,13 @@ section{
     font-weight: 500;
     line-height: 22px;
 }
-.submit-request-4{
+.submit-request-center{
+    padding-top: 14px;
     .parts-in-program p:nth-child(1) {
         margin-top: 24px;
     }
     .button{
-        margin: 30px auto 0;
+        margin: 39px auto 0;
     }
 }
 
@@ -1054,9 +1135,10 @@ section{
 /*6 секция Описание курса*/
 
 .section-desription-course{
-    background-image: url("../img/Fon5.jpg");
-    padding-top: 134px;
-    background-position: center -21px;
+    background-image: url(../img/Fon5.jpg);
+    padding-top: 142px;
+    padding-bottom: 162px;
+    background-position: center -10px;
     h2{
         font-size: 33px;
         font-weight: 600;
@@ -1083,12 +1165,15 @@ section{
     display: flex;
     &__img{
         width: 64%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        //background-position: center;
+        //background-repeat: no-repeat;
+        //background-size: cover;
+      img{
+        max-width: 100%;
+      }
     }
     &__des{
-        padding: 25px 32px 59px 33px;
+        padding: 25px 32px 36px 33px;
         width: 36%;
         text-align: justify;
         p{
@@ -1098,12 +1183,15 @@ section{
     &__name{
         font-size: 20px;
         font-weight: 500;
-        text-align: center;
+        //text-align: center;
+        font-style: italic;
     }
     &__review{
         font-size: 16px;
         margin-top: 29px;
         line-height: 23px;
+        font-weight: 400;
+        font-style: italic;
     }
 }
 
@@ -1118,7 +1206,7 @@ section{
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 18px;
+    margin-top: 16px;
 }
 .wrapper-slider-reviews .owl-dots .owl-dot {
     margin: 5px;
@@ -1126,6 +1214,7 @@ section{
     height: 10px;
     border-radius: 50%;
     background-color: #f1f1f1;
+  box-shadow: 0 0 5px 1px #737171;
 }
 .wrapper-slider-reviews .owl-dots .owl-dot:hover {
     background-color: #2e3180;
@@ -1133,6 +1222,566 @@ section{
 .wrapper-slider-reviews .owl-dots .owl-dot.active {
     background-color: #2e3180;
 }
+
+.wrapper-what-system{
+    width: 66%;
+    margin-left: auto;
+    margin-top: 41px;
+    .h3-title{
+        font-size: 24px;
+        margin-bottom: 26px;
+    }
+    p{
+        text-indent: 25px;
+        line-height: 25px;
+        text-align: justify;
+        &:not(:last-child){
+            margin-bottom: -3px;
+        }
+    }
+}
+.wrapper-course-authors{
+    margin-top: 282px;
+    line-height: 60px;
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 500;
+    p:nth-child(1){
+        text-transform: uppercase;
+    }
+}
+
+/*6 секция Авторы курса*/
+.section-course-authors{
+    background-image: url("../img/Fon6.jpg");
+    background-position: center 6px;
+    padding-top: 10px;
+    padding-bottom: 248px;
+}
+.wrapper-foto-authors{
+    position: absolute;
+    right: 14px;
+    top: -337px;
+    width: 44%;
+  min-width: 240px;
+    max-width: 491px;
+    background: url("../img/FotoAuthors.png")center no-repeat;
+    background-size: contain;
+    &:before{
+        content: "";
+        display: block;
+        padding-top: 92.1%;
+    }
+}
+
+.wrapper-authors{
+    display: flex;
+    margin-top: 36px;
+    margin-bottom: 70px;
+    &__ara{
+        width: 286px;
+        margin-right: 7px;
+    }
+    &__anna{
+        width: 286px;
+    }
+    &__name{
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+    &__description{
+        font-weight: 400;
+        font-style: italic;
+        margin-top: 7px;
+        font-size: 15px;
+        line-height: 23px;
+        letter-spacing: -0.4px;
+    }
+}
+
+.detail-about-authors{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    &__list{
+        line-height: 24px;
+        letter-spacing: -0.4px;
+    }
+    p{
+        line-height: 24px;
+        letter-spacing: -0.4px;
+    }
+    h3{
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-top: 28px;
+        margin-bottom: 27px;
+    }
+    &__ara{
+        margin-top: 19px;
+        margin-bottom: 10px;
+        /*display: flex;*/
+    }
+    &__left-col{
+        /*width: 85%;
+        width: calc(100% - 164px - 7px);
+        margin-right: 7px;*/
+        p:not(:last-child){
+            margin-bottom: 24px;
+        }
+    }
+    &__right-col{
+        /*width: 164px;
+        height: 424px;
+        margin-top: -24px;
+        background: url("../img/FotoAra.png")center no-repeat;
+        background-size: cover;*/
+        float: right;
+        margin-left: 7px;
+        width: 164px;
+        height: 424px;
+        margin-top: -24px;
+        background: url("../img/FotoAra.png") center no-repeat;
+        background-size: cover;
+
+    }
+}
+.article-authors{
+    font-size: 24px;
+    margin-left: auto;
+    margin-top: 21px;
+    letter-spacing: 0.1px;
+}
+
+.submit-request-5{
+    padding-top: 21px;
+    padding-bottom: 35px;
+    .h2-title{
+        letter-spacing: -0.2px;
+    }
+    .parts-in-program p:nth-child(1) {
+        margin-top: 16px;
+    }
+    .button {
+        margin: 32px auto 0;
+    }
+}
+.section-five-levels{
+    background-image: url("../img/Fon7cc.jpg");
+    background-position: center 6px;
+    padding-top: 87px;
+    padding-bottom: 313px;
+    background-repeat: no-repeat;
+    h2{
+        letter-spacing: -0.6px;
+    }
+    &__subtitle{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 25px;
+        letter-spacing: -0.3px;
+    }
+}
+
+@margin_2:5px;
+.row-5-column{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -@margin_2;
+    margin-right:-@margin_2;
+}
+
+.row-5-column__col {
+    position: relative;
+    width: calc(100%/5 - @margin_2*2);
+    margin-left: @margin_2;
+    margin-right: @margin_2;
+}
+.wrapper-five-levels{
+    margin-top: 67px;
+}
+.healing-level{
+    padding: 13px 19px 26px 19px;
+    background-color: rgba(255, 255, 255,0.7);
+    border-radius: 10px;
+    &__number{
+        font-size: 100px;
+        font-weight: 500;
+        color: #fff;
+        text-shadow: 0 0 3px #000;
+        text-align: center;
+    }
+    h3{
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 26px;
+    }
+    &__description{
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 22px;
+        line-height: 20px;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+    }
+
+}
+.result-treatment{
+    margin-top: 40px;
+
+    p{
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        color: #f1f1f1;
+        font-weight: 500;
+        text-shadow: 0 0 6px #000;
+        &:not(:last-child){
+            margin-bottom: 17px;
+        }
+    }
+
+}
+
+.section-tour-program {
+    background-image: url("../img/Fon8.jpg");
+    background-position: center 6px;
+    padding-top: 70px;
+    padding-bottom: 157px;
+    background-repeat: no-repeat;
+
+}
+.wrapper-who-is{
+
+    .h3-title{
+        margin-bottom: 16px;
+    }
+    p{
+        line-height: 27px;
+    }
+    p:not(:last-child){
+        margin-bottom: 3px;
+    }
+    span{
+        font-weight: 500;
+    }
+
+}
+.wrapper-tour-program{
+    margin-top: 40px;
+    .h3-title{
+        margin-bottom: 17px;
+    }
+    p{
+        line-height: 30px;
+    }
+    p:not(:last-child){
+        margin-bottom: 30px;
+    }
+    span{
+        display: block;
+        font-weight: 500;
+    }
+}
+
+
+.program-will-give{
+    font-size: 22px;
+    letter-spacing: -0.1px;
+    line-height: 24px;
+    margin-top: 52px;
+    text-align: center;
+    p:not(:last-child){
+        margin-bottom: 6px;
+    }
+}
+.total-another-man{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 63px;
+    text-align: center;
+    line-height: 43px;
+}
+.submit-request-6{
+    padding-top: 21px;
+    padding-bottom: 35px;
+    .h2-title{
+        letter-spacing: -0.2px;
+        line-height: 47px;
+    }
+    .parts-in-program p:nth-child(1) {
+        margin-top: 29px;
+    }
+    .button {
+        margin: 46px auto 0;
+    }
+}
+
+/*8секция Стоимость работ*/
+
+.section-cost-course {
+    background-image: url("../img/Fon9cc.jpg");
+    background-position: center -4px;
+    padding-top: 143px;
+    padding-bottom: 127px;
+    background-repeat: no-repeat;
+    .container{
+        max-width: 1035px;
+    }
+    h2{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+}
+.price-list{
+    margin-top: 41px;
+    padding-left: 34px;
+    li{
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        &:not(:last-child){
+            margin-bottom: 6px;
+        }
+        &:before{
+            content: "";
+            display: block;
+            margin-right: 6px;
+            width: 5px;
+            height: 5px;
+            background-color: #2e3180;
+            border-radius: 50%;
+        }
+    }
+}
+.discount-system-list{
+    margin-top: 54px;
+    padding-left: 29px;
+    p{
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 4px;
+    }
+    li{
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        &:not(:last-child){
+            margin-bottom: 6px;
+        }
+        &:before{
+            content: "-";
+            display: block;
+            margin-right: 6px;
+            //width: 5px;
+            //height: 5px;
+            //background-color: #2e3180;
+            border-radius: 50%;
+        }
+
+    }
+}
+
+@margin:15px;
+.row-2-column{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -@margin;
+    margin-right:-@margin;
+}
+
+.row-2-column__col {
+    position: relative;
+    width: calc(50% - @margin*2);
+    margin-left: @margin;
+    margin-right: @margin;
+}
+
+.included-price{
+    margin-top: 46px;
+    &__item{
+        background-color: rgba(255,255,255,0.4);
+        border-radius: 15px;
+    }
+    &__col-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__item-inc{
+        padding: 26px 21px 20px 31px;
+    }
+    &__item-add{
+        padding: 26px 25px 109px 31px;
+    }
+    &__item-footnote{
+        padding: 28px 33px 33px 33px;
+        p{
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 15px;
+            letter-spacing: -0.2px;
+        }
+    }
+    &__list{
+        p{
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 19px;
+        }
+        li{
+            display: flex;
+            line-height: 24px;
+            &:not(:last-child){
+                margin-bottom: 8px;
+
+            }
+            font-weight: 500;
+            &:before{
+                content: "\f111";
+                font-family: "FontAwesome", sans-serif;
+                display: block;
+                margin-right: 6px;
+                margin-top: 0px;
+                color: #2e3180;
+                font-size: 7px;
+            }
+        }
+
+    }
+}
+ /*Секция 10 Как принять участие*/
+
+.section-how-participate {
+  background-image: url("../img/Fon10с.jpg");
+  background-position: center 28px;
+  padding-top: 42px;
+  padding-bottom: 57px;
+  background-repeat: no-repeat;
+    .h2-title{
+        text-align: left;
+    }
+    .h3-title{
+        font-size: 20px;
+    }
+}
+.wrapper-how-participate{
+    margin-top: 37px;
+    .healing-level{
+        box-shadow: 0 0 7px 2px #b1b1da;
+        padding: 13px 19px 38px 19px;
+    }
+    .healing-level__description{
+        font-size: 16px;
+        margin-top: 24px;
+        line-height: 24px;
+    }
+}
+.wrapper-positive-changes{
+    margin-top: 50px;
+    .h3-title{
+        margin-bottom: 27px;
+    }
+    p{
+        line-height: 24px;
+    }
+    p:not(:last-child){
+        margin-bottom: 24px;
+    }
+}
+.wrapper-repeated-questions{
+    margin-top: 42px;
+    &__question{
+        font-weight: 500;
+        margin-top: 29px;
+        margin-bottom: 28px;
+    }
+    &__answer{
+        font-weight: 400;
+        font-style: italic;
+        line-height: 23px;
+    }
+}
+
+.submit-request-end{
+  padding-top: 21px;
+  .h2-title{
+    text-align: left;
+  }
+  .call-to-action-title{
+    margin-top: 16px;
+  }
+  .wrapper-form__easy-connection {
+    margin-top: 20px;
+  }
+}
+
+/*Секция 11 */
+.section-baly {
+  background-image: url("../img/Fon11.jpg");
+  background-position: center -13px;
+  padding-top: 220px;
+  padding-bottom: 488px;
+  background-repeat: no-repeat;
+
+}
+.course-location{
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 114px;
+  word-spacing: 16px;
+  margin-top: 33px;
+}
+.course-date{
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 213px;
+  margin-top: 3px;
+}
+
+.section-footer{
+  background-color: #2e3180;
+  margin-top: -14px;
+  padding-top: 28px;
+  padding-bottom: 50px;
+}
+
+.footer-social-icon{
+  justify-content: center;
+  .social-icon__item i{
+    font-size: 46px;
+  }
+}
+
+.wrapper-privacy-policy{
+  display: flex;
+  justify-content: space-around;
+    margin-top: 27px;
+
+  a{
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    &:last-child{
+      text-align: left;
+    }
+  }
+
+}
+
 
 
 
@@ -1266,7 +1915,6 @@ section{
     font-size: 17px;
     z-index: 25;
 }
-
 
 
 

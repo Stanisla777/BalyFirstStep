@@ -21,8 +21,8 @@ CountdownTimer.prototype={
 
               timer += '<div class="number-wrapper">' +
                 '<span class="number day">'+day+'</span></div><div class="timer-date">дней</div><div class="line">'+obj.delimiter+'</div>';
-                timer += '<div class="number-wrapper"><span class="number hour">'+hour+'</span></div><div class="timer-date">часов</div><div class="line">'+obj.delimiter+'</div>';
-                timer += '<div class="number-wrapper"><span class="number min">'+this.addZero(min)+'</span></div><div class="timer-date">минут</div>';
+                timer += '<div class="number-wrapper"><span class="number hour">'+hour+'</span></div><div class="timer-date">часов</div>';
+                /*timer += '<div class="number-wrapper"><span class="number min">'+this.addZero(min)+'</span></div><div class="timer-date">минут</div>';*/
 
 
             this.elem.innerHTML = timer;
@@ -50,8 +50,8 @@ function CDT(year,month,day,hour,minutes,seconds,container){
 var obj = {
     year: '2019',
     month: '01',
-    day:'12',
-    hour:'4',
+    day:'23',
+    hour:'0',
     minutes:'8',
     seconds:'00',
     delimiter:',',
