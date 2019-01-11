@@ -1297,6 +1297,7 @@
             nav:true, //Отключение навигации
             navText : ['',''],
             items:1,
+            autoHeight: true,
             slideBy:'page',
 //            responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
 //                 0:{
@@ -1393,25 +1394,25 @@
             $(this).find('label').attr('for','checkbox_'+index);
         })
 
-        $('.slider-reviews-item__name').on('click',function () {
-            if($(this).siblings('.slider-reviews-item__review').hasClass('visible')){
-                $('.slider-reviews-item__review').css({
-                    'overflow':'hidden',
-                    'max-height':'250px'
-                }).removeClass('visible');
-            }
-
-            else{
-                $('.slider-reviews-item__review').css({
-                    'overflow':'visible',
-                    'max-height':'none'
-                }).addClass('visible')
-            }
-
-
-
-
-        })
+        // $('.slider-reviews-item__name').on('click',function () {
+        //     if($(this).siblings('.slider-reviews-item__review').hasClass('visible')){
+        //         $('.slider-reviews-item__review').css({
+        //             'overflow':'hidden',
+        //             'max-height':'250px'
+        //         }).removeClass('visible');
+        //     }
+        //
+        //     else{
+        //         $('.slider-reviews-item__review').css({
+        //             'overflow':'visible',
+        //             'max-height':'none'
+        //         }).addClass('visible')
+        //     }
+        //
+        //
+        //
+        //
+        // })
 
 
 
