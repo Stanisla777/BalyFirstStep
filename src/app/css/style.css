@@ -368,10 +368,11 @@ section {
 }
 .wrapper-main-section {
   position: absolute;
-  width: 42%;
-  min-width: 316px;
-  max-width: 798px;
   z-index: 2;
+}
+.wrapper-main-section img {
+  width: auto;
+  height: auto;
 }
 .grid-top {
   top: -52px;
@@ -650,7 +651,7 @@ section {
 }
 /*Секция 3 - Преимущества*/
 .advantages-section {
-  padding-top: 98px;
+  padding-top: 102px;
   background-image: url(../img/Fon2c.jpg);
   background-position: center 284px;
   background-repeat: no-repeat;
@@ -770,18 +771,6 @@ section {
   background-size: cover;
   z-index: 25;
 }
-.submit-request-2:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: -167px;
-  height: 161px;
-  background: url(../img/submitReq2downc.png) center no-repeat;
-  background-size: cover;
-  z-index: 4;
-}
 .submit-request-2 .button {
   margin-left: auto;
   margin-top: 21px;
@@ -816,6 +805,18 @@ section {
   background-position: center 332px;
   padding-top: 168px;
   padding-bottom: 106px;
+}
+.section-course-program:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 4px;
+  height: 161px;
+  background: url(../img/submitReq2downc.png) center no-repeat;
+  background-size: cover;
+  z-index: 4;
 }
 .section-course-program h3 {
   font-size: 30px;
@@ -1313,7 +1314,8 @@ section {
   letter-spacing: 0.1px;
 }
 .submit-request-5 {
-  box-shadow: 0 0 19px 4px #9a9494;
+  box-shadow: 0 0 26px 4px #9a9494;
+  z-index: 1;
   padding-top: 21px;
   padding-bottom: 35px;
 }
@@ -1338,8 +1340,10 @@ section {
 .submit-request-5 .button {
   margin: 32px auto 0;
 }
+/*.section-cost-courseСекция 5 уровней*/
 .section-five-levels {
-  background-position: center 6px;
+  background-image: url("../img/Fon7c.jpg");
+  background-position: center 28px;
   padding-top: 87px;
   padding-bottom: 313px;
   background-repeat: no-repeat;
@@ -1412,11 +1416,22 @@ section {
   margin-bottom: 17px;
 }
 .section-tour-program {
-  background-image: url("../img/Fon8.jpg");
+  background-color: #d5ddff;
   background-position: center 6px;
   padding-top: 70px;
   padding-bottom: 157px;
-  background-repeat: no-repeat;
+}
+.section-tour-program:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -270px;
+  height: 277px;
+  background: url(../img/tourup.png) center no-repeat;
+  background-size: cover;
+  z-index: 4;
 }
 .wrapper-who-is .h3-title {
   margin-bottom: 16px;
@@ -1468,6 +1483,30 @@ section {
   padding-top: 21px;
   padding-bottom: 35px;
 }
+.submit-request-6:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -133px;
+  height: 125px;
+  background: url(../img/plaha1.png) center no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+.submit-request-6:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -134px;
+  height: 138px;
+  background: url(../img/submitReqdown.png) center no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
 .submit-request-6 .h2-title {
   letter-spacing: -0.2px;
   line-height: 47px;
@@ -1480,11 +1519,23 @@ section {
 }
 /*8секция Стоимость работ*/
 .section-cost-course {
-  background-image: url("../img/Fon9cc.jpg");
-  background-position: center -4px;
+  background-image: url("../img/Fon9.jpg");
+  background-position: center 51px;
   padding-top: 143px;
   padding-bottom: 127px;
   background-repeat: no-repeat;
+}
+.section-cost-course:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -12px;
+  height: 114px;
+  background: url(../img/costdown.png) center no-repeat;
+  background-size: cover;
+  z-index: 4;
 }
 .section-cost-course .container {
   max-width: 1035px;
@@ -1601,11 +1652,21 @@ section {
 }
 /*Секция 10 Как принять участие*/
 .section-how-participate {
-  background-image: url("../img/Fon10с.jpg");
   background-position: center 28px;
   padding-top: 42px;
   padding-bottom: 57px;
   background-repeat: no-repeat;
+}
+.section-how-participate:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 317px;
+  height: 130px;
+  background: url(../img/howup.png) center no-repeat;
+  background-size: cover;
 }
 .section-how-participate .h2-title {
   text-align: left;
@@ -1651,7 +1712,21 @@ section {
   line-height: 23px;
 }
 .submit-request-end {
+  box-shadow: 0 0 26px 4px #b5b3b3;
+  padding-bottom: 20px;
   padding-top: 21px;
+}
+.submit-request-end:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -144px;
+  height: 157px;
+  background: url(../img/enddown.png) center no-repeat;
+  background-size: cover;
+  z-index: 4;
 }
 .submit-request-end .h2-title {
   text-align: left;
@@ -1664,9 +1739,9 @@ section {
 }
 /*Секция 11 */
 .section-baly {
-  background-image: url("../img/Fon11.jpg");
+  background-image: url("../img/Fon11c.jpg");
   background-position: center -13px;
-  padding-top: 220px;
+  padding-top: 200px;
   padding-bottom: 488px;
   background-repeat: no-repeat;
 }
@@ -1688,6 +1763,17 @@ section {
   margin-top: -14px;
   padding-top: 28px;
   padding-bottom: 50px;
+}
+.section-footer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -111px;
+  height: 118px;
+  background: url(../img/footerup.png) center no-repeat;
+  background-size: cover;
 }
 .footer-social-icon {
   justify-content: center;

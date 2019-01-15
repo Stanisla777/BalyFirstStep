@@ -112,6 +112,7 @@
     .submit-request-2__title {
         font-size: 27px;
         line-height: 35px;
+        padding-top: 10px;
     }
 
     .wrapper-part-in-program{
@@ -300,7 +301,11 @@
         margin-bottom: 20px;
     }
     .section-amazing-results{
-        padding-top: 130px;
+        padding-top: 117px;
+    }
+    .submit-request-3:after {
+        bottom: -117px;
+        height: 95px;
     }
 
     .section-amazing-results h3{
@@ -417,6 +422,7 @@
     .submit-request-2__title {
         font-size: 25px;
         text-align: left;
+        padding-top: 10px;
     }
     .slider-reviews-item__img {
         width: 70%;
