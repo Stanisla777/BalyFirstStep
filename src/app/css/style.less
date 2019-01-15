@@ -402,50 +402,32 @@ a.button{
 /*1 Главная секция*/
 section{
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size:cover;
 }
 .main-section{
-    background-image: url("../img/Fon1c.jpg");
+    background-image: url("../img/Fon1cc.jpg");
     padding-top: 24px;
-     padding-bottom: 82px;
+    padding-bottom: 89px;
 }
 
 .wrapper-main-section{
     position: absolute;
-    width: 59%;
-    min-width: 600px;
-    height: 50%;
-    z-index: 10;
-    img{
-        width: 100%;
-        height: auto;
-    }
+    width: 42%;
+    min-width: 316px;
+    max-width: 798px;
+    //height: 50%;
+    z-index: 2;
+
 }
-.top{
-    top: -93px;
-    left: -278px;
+.grid-top{
+    top: -52px;
+    left: -5px;
 }
-.bot{
-    bottom: -77px;
-    right: -283px;
+.grid-bot{
+    bottom: -154px;
+    right: -7px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -610,8 +592,32 @@ section{
 /*2вариант*/
 .submit-request{
     background-color: #d5ddff;
-    padding-top: 13px;
+    padding-top: 3px;
     padding-bottom: 9px;
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -124px;
+        height: 125px;
+        background: url(../img/plaha1.png)center no-repeat;
+        background-size: cover;
+        z-index: 4;
+    }
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -130px;
+        height: 138px;
+        background: url(../img/submitReqdown.png)center no-repeat;
+        background-size: cover;
+        z-index: 4;
+    }
 }
 
 
@@ -766,10 +772,11 @@ section{
 /*Секция 3 - Преимущества*/
 .advantages-section{
     padding-top: 98px;
-    background-image: url(../img/Fon2.jpg);
-    background-position: center;
+    background-image: url(../img/Fon2c.jpg);
+    background-position: center 284px;
     background-repeat: no-repeat;
     padding-bottom: 153px;
+    z-index: 20;
   .logo-first-step{
     margin-bottom: 28px;
   }
@@ -886,6 +893,38 @@ section{
 }
 
 .submit-request-2{
+
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -131px;
+        height: 141px;
+        background: url(../img/submitReq2up.png)center no-repeat;
+        background-size: cover;
+        z-index: 25;
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -167px;
+        height: 161px;
+        background: url(../img/submitReq2downc.png)center no-repeat;
+
+        background-size: cover;
+        z-index: 4;
+    }
+
+
+
+
+
+
     .button{
         margin-left:auto;
         margin-top: 21px;
@@ -926,8 +965,8 @@ section{
 /*4 секция Программа курса*/
 
 .section-course-program{
-    background-image: url(../img/Fon3c.jpg);
-    background-position: center -1px;
+    background-image: url(../img/Fon3.jpg);
+    background-position: center 332px;
     padding-top: 168px;
     padding-bottom: 106px;
     h3{
@@ -1077,6 +1116,35 @@ section{
 }
 
 .submit-request-3{
+
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -109px;
+        height: 125px;
+        background: url(../img/plaha1.png)center no-repeat;
+        background-size: cover;
+        z-index: 4;
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -171px;
+        height: 138px;
+        background: url(../img/submitReqdown.png)center no-repeat;
+        background-size: cover;
+        z-index: 4;
+    }
+
+
+
+
     padding-top: 53px;
     .wrapper-submit-application{
         display: flex;
@@ -1098,8 +1166,9 @@ section{
 /*5 секция Удивительные результаты*/
 
 .section-amazing-results{
-    background-image: url("../img/Fon4.jpg");
-    background-position: center 6px;
+    background-image: url("../img/Fon4c.jpg");
+    background-position: center 104%;
+    background-size: contain;
     padding-top: 177px;
     padding-bottom: 128px;
     .container{
@@ -1183,7 +1252,34 @@ section{
     font-weight: 500;
     line-height: 22px;
 }
+.submit-request-4{
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -104px;
+        height: 125px;
+        background: url(../img/plaha1.png)center no-repeat;
+        background-size: cover;
+        z-index: 4;
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -138px;
+        height: 108px;
+        background: url(../img/submitReqdown.png)center no-repeat;
+        background-size: cover;
+        z-index: 4;
+    }
+}
 .submit-request-center{
+
     padding-top: 14px;
     .parts-in-program p:nth-child(1) {
         margin-top: 24px;
@@ -1198,17 +1294,16 @@ section{
 
 .section-desription-course{
     background-image: url(../img/Fon5.jpg);
+    background-position: center -7px;
     padding-top: 142px;
     padding-bottom: 162px;
-    background-position: center -10px;
+
     h2{
         font-size: 33px;
         font-weight: 600;
     }
 }
-.desription-course__subtitle{
 
-}
 .desription-course-subtitle{
     font-size: 20px;
     text-transform: uppercase;
@@ -1318,7 +1413,19 @@ section{
 
 /*6 секция Авторы курса*/
 .section-course-authors{
-    background-image: url("../img/Fon6.jpg");
+    //background-image: url("../img/Fon6.jpg");
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -229px;
+        height: 242px;
+        background: url(../img/authorsup.png)center no-repeat;
+        background-size: cover;
+    }
+    background-color: #d5ddff;
     background-position: center 6px;
     padding-top: 10px;
     padding-bottom: 248px;
@@ -1420,6 +1527,21 @@ section{
 }
 
 .submit-request-5{
+    box-shadow: 0 0 19px 4px #9a9494;
+
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -180px;
+        height: 194px;
+        background: url(../img/submitReq5up.png) center no-repeat;
+        background-size: cover;
+        z-index: 4;
+    }
+
     padding-top: 21px;
     padding-bottom: 35px;
     .h2-title{
@@ -1433,7 +1555,7 @@ section{
     }
 }
 .section-five-levels{
-    background-image: url("../img/Fon7cc.jpg");
+    //background-image: url("../img/Fon7cc.jpg");
     background-position: center 6px;
     padding-top: 87px;
     padding-bottom: 313px;
