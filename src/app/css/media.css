@@ -458,6 +458,13 @@
     .detail-about-authors {
         margin-top: 40px;
     }
+    .wrapper-main-section{
+        /*min-width: 500px;*/
+    }
+
+    .wrapper-main-section img{
+        width: 100%;
+    }
 
 
 

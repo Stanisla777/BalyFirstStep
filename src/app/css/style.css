@@ -366,21 +366,21 @@ section {
   padding-top: 24px;
   padding-bottom: 89px;
 }
+.main-section .grid-top {
+  top: -52px;
+  left: -5px;
+}
+.main-section .grid-bot {
+  bottom: -154px;
+  right: -7px;
+}
 .wrapper-main-section {
   position: absolute;
-  z-index: 2;
+  min-width: 500px;
 }
 .wrapper-main-section img {
   width: auto;
   height: auto;
-}
-.grid-top {
-  top: -52px;
-  left: -5px;
-}
-.grid-bot {
-  bottom: -154px;
-  right: -7px;
 }
 .header {
   display: flex;
@@ -452,7 +452,7 @@ section {
   margin-top: 38px;
 }
 .countdown_2 {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -508,6 +508,7 @@ section {
   background-color: #d5ddff;
   padding-top: 3px;
   padding-bottom: 9px;
+  z-index: 2;
 }
 .submit-request:after {
   content: "";
@@ -519,7 +520,6 @@ section {
   height: 125px;
   background: url(../img/plaha1.png) center no-repeat;
   background-size: cover;
-  z-index: 4;
 }
 .submit-request:before {
   content: "";
@@ -527,9 +527,9 @@ section {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -130px;
+  bottom: -138px;
   height: 138px;
-  background: url(../img/submitReqdown.png) center no-repeat;
+  background: url(../img/submitReqdownccc.png) center no-repeat;
   background-size: cover;
   z-index: 4;
 }
@@ -545,6 +545,9 @@ section {
 }
 .wrapper-form {
   margin-top: 21px;
+}
+.wrapper-form__agree-conditions {
+  margin-bottom: 10px;
 }
 .wrapper-form__info {
   display: flex;
@@ -651,26 +654,23 @@ section {
 }
 /*Секция 3 - Преимущества*/
 .advantages-section {
-  padding-top: 102px;
+  z-index: 1;
+  padding-top: 92px;
   background-image: url(../img/Fon2c.jpg);
   background-position: center 284px;
   background-repeat: no-repeat;
   padding-bottom: 153px;
-  z-index: 20;
 }
 .advantages-section .logo-first-step {
   margin-bottom: 28px;
 }
-/**/
-.grid-up {
-  position: absolute;
-  top: -130px;
-  right: -10px;
-  width: 42vw;
-  height: 26vw;
-  background: url(../img/grid-up.png) no-repeat;
-  background-position: center;
-  background-size: cover;
+.advantages-section .grid-top {
+  top: 1px;
+  right: -5px;
+}
+.advantages-section .grid-bot {
+  bottom: 33px;
+  left: -7px;
 }
 .wrapper-advantages-logo {
   display: flex;
@@ -759,6 +759,10 @@ section {
   margin-right: 14px;
   color: #292d83;
 }
+.submit-request-2 {
+  background-color: #d5ddff;
+  z-index: 1;
+}
 .submit-request-2:before {
   content: "";
   display: block;
@@ -806,15 +810,23 @@ section {
   padding-top: 168px;
   padding-bottom: 106px;
 }
+.section-course-program .grid-top {
+  top: 27px;
+  left: -5px;
+}
+.section-course-program .grid-bot {
+  bottom: 167px;
+  right: -7px;
+}
 .section-course-program:after {
   content: "";
   display: block;
   position: absolute;
   right: 0;
   left: 0;
-  top: 4px;
+  top: 11px;
   height: 161px;
-  background: url(../img/submitReq2downc.png) center no-repeat;
+  background: url(../img/submitReq2downcc.png) center no-repeat;
   background-size: cover;
   z-index: 4;
 }
@@ -970,7 +982,7 @@ section {
   left: 0;
   bottom: -171px;
   height: 138px;
-  background: url(../img/submitReqdown.png) center no-repeat;
+  background: url(../img/submitReqdownccc.png) center no-repeat;
   background-size: cover;
   z-index: 4;
 }
@@ -980,6 +992,7 @@ section {
   width: 83%;
   margin: 43px auto 0;
   padding-left: 27px;
+  margin-bottom: 20px;
 }
 .submit-request-3 .part-in-program {
   text-align: right;
@@ -989,8 +1002,16 @@ section {
   background-image: url("../img/Fon4c.jpg");
   background-position: center 104%;
   background-size: contain;
-  padding-top: 177px;
+  padding-top: 156px;
   padding-bottom: 128px;
+}
+.section-amazing-results .grid-top {
+  top: 16px;
+  right: -9px;
+}
+.section-amazing-results .grid-bot {
+  bottom: 491px;
+  left: -7px;
 }
 .section-amazing-results h3 {
   font-size: 24px;
@@ -1083,9 +1104,9 @@ section {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -138px;
-  height: 108px;
-  background: url(../img/submitReqdown.png) center no-repeat;
+  bottom: -159px;
+  height: 134px;
+  background: url(../img/submitReqdownccc.png) center no-repeat;
   background-size: cover;
   z-index: 4;
 }
@@ -1104,6 +1125,14 @@ section {
   background-position: center -7px;
   padding-top: 142px;
   padding-bottom: 162px;
+}
+.section-desription-course .grid-top {
+  top: 34px;
+  right: -8px;
+}
+.section-desription-course .grid-bot {
+  bottom: 497px;
+  left: -7px;
 }
 .section-desription-course h2 {
   font-size: 33px;
@@ -1209,6 +1238,14 @@ section {
   background-position: center 6px;
   padding-top: 10px;
   padding-bottom: 248px;
+}
+.section-course-authors .grid-top {
+  top: -446px;
+  right: -5px;
+}
+.section-course-authors .grid-bot {
+  bottom: 495px;
+  left: -7px;
 }
 .section-course-authors:before {
   content: "";
@@ -1348,6 +1385,10 @@ section {
   padding-bottom: 313px;
   background-repeat: no-repeat;
 }
+.section-five-levels .grid-top {
+  top: 392px;
+  left: -8px;
+}
 .section-five-levels h2 {
   letter-spacing: -0.6px;
 }
@@ -1421,6 +1462,14 @@ section {
   padding-top: 70px;
   padding-bottom: 157px;
 }
+.section-tour-program .grid-top {
+  top: -114px;
+  right: -7px;
+}
+.section-tour-program .grid-bot {
+  bottom: -126px;
+  left: -7px;
+}
 .section-tour-program:before {
   content: "";
   display: block;
@@ -1482,6 +1531,8 @@ section {
 .submit-request-6 {
   padding-top: 21px;
   padding-bottom: 35px;
+  background-color: #d5ddff;
+  z-index: 1;
 }
 .submit-request-6:before {
   content: "";
@@ -1489,8 +1540,8 @@ section {
   position: absolute;
   right: 0;
   left: 0;
-  top: -133px;
-  height: 125px;
+  top: -129px;
+  height: 130px;
   background: url(../img/plaha1.png) center no-repeat;
   background-size: cover;
   z-index: 4;
@@ -1503,7 +1554,7 @@ section {
   left: 0;
   bottom: -134px;
   height: 138px;
-  background: url(../img/submitReqdown.png) center no-repeat;
+  background: url(../img/submitReqdowncc.png) center no-repeat;
   background-size: cover;
   z-index: 4;
 }
@@ -1524,6 +1575,14 @@ section {
   padding-top: 143px;
   padding-bottom: 127px;
   background-repeat: no-repeat;
+}
+.section-cost-course .grid-top {
+  top: -83px;
+  right: -11px;
+}
+.section-cost-course .grid-bot {
+  bottom: -40px;
+  left: -7px;
 }
 .section-cost-course:after {
   content: "";
@@ -1652,10 +1711,19 @@ section {
 }
 /*Секция 10 Как принять участие*/
 .section-how-participate {
+  background-color: #d5ddff;
   background-position: center 28px;
   padding-top: 42px;
   padding-bottom: 57px;
   background-repeat: no-repeat;
+}
+.section-how-participate .grid-top {
+  top: 409px;
+  right: -5px;
+}
+.section-how-participate .grid-bot {
+  bottom: 134px;
+  left: -7px;
 }
 .section-how-participate:before {
   content: "";
@@ -1663,9 +1731,9 @@ section {
   position: absolute;
   right: 0;
   left: 0;
-  top: 317px;
+  top: 348px;
   height: 130px;
-  background: url(../img/howup.png) center no-repeat;
+  background: url(../img/howupc.png) center no-repeat;
   background-size: cover;
 }
 .section-how-participate .h2-title {
@@ -1740,10 +1808,17 @@ section {
 /*Секция 11 */
 .section-baly {
   background-image: url("../img/Fon11c.jpg");
-  background-position: center -13px;
-  padding-top: 200px;
+  padding-top: 191px;
   padding-bottom: 488px;
   background-repeat: no-repeat;
+}
+.section-baly .grid-top {
+  top: -10px;
+  right: -7px;
+}
+.section-baly .grid-bot {
+  bottom: -34px;
+  left: -7px;
 }
 .course-location {
   font-size: 50px;
