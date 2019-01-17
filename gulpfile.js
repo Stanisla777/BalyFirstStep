@@ -20,7 +20,7 @@ const config = {
         css:'/app/css',
         watch:'/app/css/*.less',
         src: '/app/css/style.less',
-        src_css: '/app/css/style.css',
+        src_css: '/app/css/media.css',
         img: '/app/img',
         dist: '/dist/css'
     },
