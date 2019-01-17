@@ -367,12 +367,16 @@ section {
   padding-bottom: 89px;
 }
 .main-section .grid-top {
-  top: -52px;
-  left: -5px;
+  /*top: -52px;
+        left: -5px;*/
+  top: -78px;
+  left: -375px;
 }
 .main-section .grid-bot {
-  bottom: -154px;
-  right: -7px;
+  /*bottom: -154px;
+        right: -7px;*/
+  bottom: -243px;
+  right: -378px;
 }
 .wrapper-main-section {
   position: absolute;
@@ -665,12 +669,12 @@ section {
   margin-bottom: 28px;
 }
 .advantages-section .grid-top {
-  top: 1px;
-  right: -5px;
+  top: -105px;
+  right: -378px;
 }
 .advantages-section .grid-bot {
-  bottom: 33px;
-  left: -7px;
+  bottom: -120px;
+  left: -374px;
 }
 .wrapper-advantages-logo {
   display: flex;
@@ -811,12 +815,16 @@ section {
   padding-bottom: 106px;
 }
 .section-course-program .grid-top {
-  top: 27px;
-  left: -5px;
+  /*top: 27px;
+        left: -5px;*/
+  top: -142px;
+  left: -376px;
 }
 .section-course-program .grid-bot {
-  bottom: 167px;
-  right: -7px;
+  /*bottom: 167px;
+        right: -7px;*/
+  bottom: 60px;
+  right: -374px;
 }
 .section-course-program:after {
   content: "";
@@ -863,6 +871,8 @@ section {
   font-size: 7px;
 }
 .wrapper-dream-day {
+  position: relative;
+  z-index: 1;
   width: 100%;
   border: 1px solid #fff;
   background-color: #fff;
@@ -980,9 +990,9 @@ section {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -171px;
+  bottom: -149px;
   height: 138px;
-  background: url(../img/submitReqdownccc.png) center no-repeat;
+  background: url(../img/submitReqdowncccc.png) center no-repeat;
   background-size: cover;
   z-index: 4;
 }
@@ -999,19 +1009,19 @@ section {
 }
 /*5 секция Удивительные результаты*/
 .section-amazing-results {
-  background-image: url("../img/Fon4c.jpg");
+  background-image: url("../img/Fon4.jpg");
   background-position: center 104%;
-  background-size: contain;
+  background-size: cover;
   padding-top: 156px;
   padding-bottom: 128px;
 }
 .section-amazing-results .grid-top {
-  top: 16px;
-  right: -9px;
+  top: -160px;
+  right: -381px;
 }
 .section-amazing-results .grid-bot {
-  bottom: 491px;
-  left: -7px;
+  top: 353px;
+  left: -377px;
 }
 .section-amazing-results h3 {
   font-size: 24px;
@@ -1111,6 +1121,7 @@ section {
   z-index: 4;
 }
 .submit-request-center {
+  z-index: 1;
   padding-top: 14px;
 }
 .submit-request-center .parts-in-program p:nth-child(1) {
@@ -1127,12 +1138,12 @@ section {
   padding-bottom: 162px;
 }
 .section-desription-course .grid-top {
-  top: 34px;
-  right: -8px;
+  top: -107px;
+  right: -379px;
 }
 .section-desription-course .grid-bot {
-  bottom: 497px;
-  left: -7px;
+  bottom: 333px;
+  left: -376px;
 }
 .section-desription-course h2 {
   font-size: 33px;
@@ -1240,12 +1251,12 @@ section {
   padding-bottom: 248px;
 }
 .section-course-authors .grid-top {
-  top: -446px;
-  right: -5px;
+  top: -490px;
+  right: -371px;
 }
 .section-course-authors .grid-bot {
-  bottom: 495px;
-  left: -7px;
+  bottom: 124px;
+  left: -374px;
 }
 .section-course-authors:before {
   content: "";
@@ -1379,6 +1390,7 @@ section {
 }
 /*.section-cost-courseСекция 5 уровней*/
 .section-five-levels {
+  z-index: 1;
   background-image: url("../img/Fon7c.jpg");
   background-position: center 28px;
   padding-top: 87px;
@@ -1386,8 +1398,8 @@ section {
   background-repeat: no-repeat;
 }
 .section-five-levels .grid-top {
-  top: 392px;
-  left: -8px;
+  top: 307px;
+  left: -375px;
 }
 .section-five-levels h2 {
   letter-spacing: -0.6px;
@@ -1463,12 +1475,12 @@ section {
   padding-bottom: 157px;
 }
 .section-tour-program .grid-top {
-  top: -114px;
-  right: -7px;
+  top: -184px;
+  right: -375px;
 }
 .section-tour-program .grid-bot {
-  bottom: -126px;
-  left: -7px;
+  bottom: -283px;
+  left: -376px;
 }
 .section-tour-program:before {
   content: "";
@@ -1572,17 +1584,17 @@ section {
 .section-cost-course {
   background-image: url("../img/Fon9.jpg");
   background-position: center 51px;
-  padding-top: 143px;
+  padding-top: 153px;
   padding-bottom: 127px;
   background-repeat: no-repeat;
 }
 .section-cost-course .grid-top {
-  top: -83px;
-  right: -11px;
+  top: -173px;
+  right: -446px;
 }
 .section-cost-course .grid-bot {
-  bottom: -40px;
-  left: -7px;
+  bottom: -224px;
+  left: -443px;
 }
 .section-cost-course:after {
   content: "";
@@ -1601,8 +1613,8 @@ section {
 }
 .section-cost-course h2 {
   text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 500;
   text-align: center;
 }
 .price-list {
@@ -1661,7 +1673,7 @@ section {
   margin-right: 15px;
 }
 .included-price {
-  margin-top: 46px;
+  margin-top: 27px;
 }
 .included-price__item {
   background-color: rgba(255, 255, 255, 0.4);
@@ -1718,12 +1730,12 @@ section {
   background-repeat: no-repeat;
 }
 .section-how-participate .grid-top {
-  top: 409px;
-  right: -5px;
+  top: 366px;
+  right: -376px;
 }
 .section-how-participate .grid-bot {
-  bottom: 134px;
-  left: -7px;
+  bottom: 76px;
+  left: -378px;
 }
 .section-how-participate:before {
   content: "";
@@ -1813,12 +1825,12 @@ section {
   background-repeat: no-repeat;
 }
 .section-baly .grid-top {
-  top: -10px;
-  right: -7px;
+  top: -211px;
+  right: -377px;
 }
 .section-baly .grid-bot {
-  bottom: -34px;
-  left: -7px;
+  bottom: -520px;
+  left: -375px;
 }
 .course-location {
   font-size: 50px;
@@ -1870,6 +1882,115 @@ section {
 }
 .wrapper-privacy-policy a:last-child {
   text-align: left;
+}
+.table-price-list {
+  position: relative;
+  background: rgba(174, 196, 237, 0.8);
+  text-align: center;
+  letter-spacing: -0.7px;
+  line-height: 15px;
+  width: 100%;
+  margin: 22px auto 0;
+  border-radius: 9px;
+}
+.table-price-list .hide {
+  display: none;
+}
+.table-row__col-tarif {
+  display: flex;
+}
+.table-row__col-tarif:not(:first-child) {
+  width: calc((100% - 43%)/2);
+}
+.table-row__col-tarif:first-child {
+  width: 43%;
+}
+.table-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.table-col {
+  padding: 10px 10px;
+  border-bottom: 1px solid #fff;
+  min-height: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.type-allocation {
+  display: flex;
+}
+.tarif-price {
+  display: flex;
+}
+.col-row {
+  border-right: 1px solid #fff;
+  width: 29%;
+}
+.col-row-1 {
+  font-size: 16px;
+  color: #2e3180;
+  font-weight: 500;
+  width: 34%;
+  max-width: 144px;
+}
+.col-row-2 {
+  flex-grow: 1;
+}
+.col-col {
+  width: 50%;
+}
+.col-col:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+.table-font-light {
+  font-size: 14px;
+  font-weight: 300;
+}
+.table-font-medium {
+  font-size: 16px;
+  font-weight: 500;
+}
+.table-font-bold {
+  font-size: 16px;
+  font-weight: 600;
+}
+.table-price-list-children {
+  display: flex;
+  position: relative;
+  background: rgba(174, 196, 237, 0.8);
+  text-align: center;
+  letter-spacing: -0.7px;
+  line-height: 15px;
+  width: 100%;
+  margin: 20px auto 0;
+  border-radius: 9px;
+}
+.table-price-list-children .col-col {
+  flex-grow: 1;
+}
+.children-row {
+  display: flex;
+}
+.price-children-col-1 {
+  font-size: 16px;
+  color: #2e3180;
+  font-weight: 500;
+  width: 34%;
+  max-width: 144px;
+}
+.price-children-col-2 {
+  flex-grow: 1;
+}
+.children-row-tarif {
+  justify-content: center;
+}
+.children-row-col {
+  padding: 10px;
+}
+.col-col-16 {
+  width: 16.6%;
 }
 /*Модальное окно*/
 #lean_overlay {
